@@ -1,0 +1,491 @@
+language* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: calc(50% - 540px);
+    padding-right: calc(50% - 540px);
+}
+
+body {
+    background: #BBE1E7;
+    /* Основной текст */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #220A0F;
+    mix-blend-mode: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.heading {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    color: #842B3C;
+    margin-bottom: 40px;
+}
+
+.header {
+    background: #842B3C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: center;
+    padding-right: calc(50% - 440px);
+}
+
+.header_link {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #B5ECEB
+}
+
+.header_link_port {
+    margin-right: auto;
+}
+
+.header_link:hover {
+    color: rgb(29, 180, 180);
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-item_1 {
+    margin-right: auto;
+}
+
+.top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 120px;
+    padding-bottom: 152px;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-title {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;
+    color: #842B3C;
+    position: relative;
+    z-index: 1;
+}
+
+.foto {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: calc(50% - 640px);
+    top: 0px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    padding-top: 32px;
+}
+
+.about__block {
+    width: 480px;
+    height: 100%;
+    background: #842B3C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 640px);
+    color: #BBE1E7;
+
+}
+
+.about__content {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+
+.carousel-indicators {
+    bottom: -5pc;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #842B3C;
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.education__content {
+    width: 610px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 32px;
+
+}
+
+.education__block {
+
+
+    background: #842B3C;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: calc(50% - 540px);
+    top: 0;
+    height: 100%;
+    width: auto;
+
+}
+
+.logo {
+    width: 278px;
+    height: 204px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.contacts {
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.heading-contacts {
+    text-align: center;
+}
+
+.contacts__link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    gap: 22px;
+}
+
+.contacts-education {
+    color: #220A0F;
+    text-align: center;
+}
+
+.footer {
+    background: #842B3C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.footer_link img {
+    display: block;
+}
+
+@media screen and (max-width: 1120px) {
+    .education__content {
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 480px);
+        padding-right: calc(50% - 480px);
+    }
+
+    .top {
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .top-title {
+        position: relative;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+
+        justify-content: flex-end;
+
+    }
+
+    .container-fluid {
+        right: 10px;
+    }
+
+    .navbar-toggler {
+
+        color: #bbe1e7;
+        background-color: #bbe1e7;
+        border: var(--bs-border-width) solid #842b3c;
+
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    .nav-item_1 {
+        margin-left: auto;
+        margin-right: 7px;
+    }
+
+    .foto {
+        position: relative;
+        right: auto;
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about__block {
+        margin-top: 32px;
+        padding-bottom: 48px;
+        padding-top: 48px;
+        width: 100%;
+        height: auto;
+        position: static;
+        justify-content: center
+    }
+
+    .about__content {
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-bottom: 32px;
+    }
+
+    .portfolio {
+        padding-top: 0px;
+    }
+
+    .education {
+        flex-direction: column-reverse;
+    }
+
+    .education__block {
+        padding-bottom: 48px;
+        padding-top: 48px;
+        width: 100%;
+        height: auto;
+        position: static;
+        justify-content: center
+    }
+
+    .education__content {
+        padding-top: 32px;
+    }
+
+    .contacts {
+        padding-top: 0px;
+        padding-bottom: 32px;
+    }
+
+    .heading {
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .center {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    body {
+        /* Основной текст */
+        font-size: 15px;
+        line-height: 19.5px;
+    }
+
+    .top {
+        flex-direction: column;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .top-title {
+        position: relative;
+        font-size: 54px;
+        line-height: 70px;
+    }
+
+    .foto {
+        position: relative;
+        right: auto;
+    }
+
+    .navbar>.container,
+    .navbar>.container-fluid,
+    .navbar>.container-lg,
+    .navbar>.container-md,
+    .navbar>.container-sm,
+    .navbar>.container-xl,
+    .navbar>.container-xxl {
+
+        justify-content: flex-end;
+
+    }
+
+    .container-fluid {
+        right: 10px;
+    }
+
+    .navbar-toggler {
+        color: #bbe1e7;
+        background-color: #bbe1e7;
+        border: var(--bs-border-width) solid #842b3c;
+
+    }
+
+    .about {
+        flex-direction: column-reverse;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .about__block {
+        margin-top: 0px;
+        padding-bottom: 48px;
+        padding-top: 48px;
+        width: 100%;
+        height: auto;
+        position: static;
+        justify-content: center
+    }
+
+    .about__content {
+
+        padding-bottom: 32px;
+        width: auto;
+    }
+
+    .portfolio {
+        padding: 32px;
+    }
+
+    .carousel-indicators {
+        padding: 10px;
+
+        margin-bottom: 32px;
+    }
+
+    .education {
+        flex-direction: column-reverse;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .education__block {
+        padding-bottom: 48px;
+        padding-top: 48px;
+        width: 100%;
+        height: auto;
+        position: static;
+        justify-content: center
+    }
+
+    .education__content {
+        padding-top: 32px;
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .contacts {
+        padding-top: 0px;
+        padding-bottom: 32px;
+    }
+
+    .contacts__link {
+        margin-top: 0px;
+    }
+
+    .heading {
+        margin-top: 0px;
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+}
